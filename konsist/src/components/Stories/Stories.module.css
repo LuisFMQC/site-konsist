@@ -1,0 +1,96 @@
+img,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+.stories {
+  display: grid;
+  grid-column: 1 / -1;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 1400px;
+  height: 700px;
+  background: black;
+}
+
+.storyContainer {
+  display: grid;
+  grid-area: 1 / -1;
+}
+
+.navButtons {
+  grid-area: 1/1;
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  position: relative;
+}
+
+.navButtons button {
+  opacity: 0;
+  appearance: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.slideThumb {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  pointer-events: none;
+}
+
+.slideThumb > span {
+  flex: 1;
+  display: block;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 5px;
+  border-radius: 4px;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.slideThumb .thumbItem.active {
+  display: block;
+  height: inherit;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 4px;
+  animation: thumb forwards linear running;
+  transform: translateX(-100%);
+}
+
+.slideThumb .thumbItem.paused {
+  animation-play-state: paused;
+}
+
+.modulo {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 40px;
+  background: #f7f7f7;
+  margin-left: -120px;
+  padding-left: 120px;
+  width: 1400px;
+  height: 236px;
+}
+
+.pontos {
+  grid-column: 7 / 9;
+}
+
+.titulo {
+  padding-left: 60px;
+  padding-top: 40px;
+  grid-column: 1 / 6;
+}
+
+.desc {
+  padding-left: 60px;
+  grid-column: 1/6;
+}
+
+@keyframes thumb {
+  to {
+    transform: initial;
+  }
+}

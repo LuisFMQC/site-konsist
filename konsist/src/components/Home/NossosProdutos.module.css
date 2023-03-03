@@ -1,0 +1,24 @@
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-top: 0;
+  padding: 0px 120px 0px 120px;
+  grid-column-gap: 40px;
+  max-width: 1400px;
+  align-items: start;
+  margin: auto;
+}
+
+.tituloProd {
+  font-family: var(--type-first);
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 72px;
+  color: #121212;
+  grid-column: 1 / -1;
+  margin-bottom: 40px;
+}
+
+.tituloProd span {
+  color: #41bd9a;
+}

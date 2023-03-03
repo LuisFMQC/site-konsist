@@ -1,0 +1,103 @@
+.footer {
+  display: grid;
+  overflow: visible;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 40px;
+  margin-top: 0;
+  padding: 60px 120px 0px 120px;
+  max-width: 1400px;
+  align-items: initial;
+  height: 528px;
+  margin: auto;
+  background: #f7f7f7;
+}
+
+.logofooter {
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  width: 136px;
+  height: 32px;
+}
+
+.infoDiv,
+.contatoDiv {
+  grid-column: 10 / 12;
+  font-family: var(--type-second);
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.informacoes,
+.contato {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  margin-bottom: 32px;
+  color: #121212;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.itemInfo {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 500;
+  color: #595959;
+}
+
+.itemContato {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #595959;
+  margin-bottom: 32px;
+}
+
+.itemMedia {
+  margin-right: 32px;
+}
+
+.media {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 60px;
+}
+
+.contatoDiv {
+  grid-column: 4 / 9;
+}
+
+.contatoIconsDiv {
+  display: flex;
+  grid-column: 4 / 4;
+  flex-direction: column;
+  padding-top: 2px;
+  margin-right: 12px;
+}
+
+.dadosContato {
+  display: flex;
+  flex-direction: row;
+  margin-left: -36px;
+}
+
+.contatoIcons {
+  margin-bottom: 4px;
+}
+
+.endereco {
+  margin-top: 28px;
+}
+
+.copyright {
+  grid-column: 1 / 12;
+  font-family: var(--type-second);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #9c9c9c;
+  margin-bottom: 32px;
+}
