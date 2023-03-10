@@ -1,0 +1,11 @@
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.container > :nth-child(even) {
+    display: flex;
+    padding-top: 60px;
+    background:linear-gradient(to right, #EDEDED 980px, white 420px);
+    flex-direction: row-reverse;
+  }

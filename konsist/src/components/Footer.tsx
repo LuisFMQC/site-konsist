@@ -8,14 +8,40 @@ import { ReactComponent as Email } from "../assets/email.svg";
 import { ReactComponent as Instagram } from "../assets/instagram.svg";
 import { ReactComponent as Facebook } from "../assets/facebook.svg";
 import { ReactComponent as Endereco } from "../assets/endereco.svg";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Footer = () => {
+
+    const [currentRoute, setCurrentRoute] = React.useState("");
+    const [setor, setSetor] = React.useState("");
+    const location = useLocation();
+
+    React.useEffect(() => {
+      setCurrentRoute(location.pathname);
+      if (setor === 'parceiros' || setor === 'clientes') {
+        scrollToElement(setor)
+        }
+      }
+      , [location, setor]);
+
+    function scrollToElement(id: string) {
+      if(location.pathname !== '/')
+        setSetor(id);
+      else if(location.pathname === "/"){
+        setSetor('');
+        const element = document.getElementById(id);
+        if (element){
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+      }
+
   return (
     <footer className={styles.footer}>
       <Link
         className={styles.logofooter}
         to="/"
+        onClick={() => scrollToElement("header")}
         aria-label="Konsist - Home - Footer"
       >
         <Logofooter />
@@ -64,19 +90,19 @@ const Footer = () => {
       <div className={styles.infoDiv}>
         <h2 className={styles.informacoes}>INFORMAÇÕES</h2>
         <nav className={styles.nav}>
-          <Link className={styles.itemInfo} to="/produtos">
+          <Link className={currentRoute === "/produtos" ? styles.selected : styles.itemInfo} to="/produtos">
             Produtos
           </Link>
-          <Link className={styles.itemInfo} to="/sobre">
+          <Link className={currentRoute === "/sobre" ? styles.selected : styles.itemInfo} to="/sobre">
             Sobre
           </Link>
-          <Link className={styles.itemInfo} to="/contato">
+          <Link className={currentRoute === "/contato" ? styles.selected : styles.itemInfo} to="/contato">
             Contato
           </Link>
-          <Link className={styles.itemInfo} to=".parceiros">
+          <Link className={styles.itemInfo} to="/#parceiros" onClick={() => setSetor("parceiros") }>
             Parceiros
           </Link>
-          <Link className={styles.itemInfo} to=".clientes">
+          <Link className={styles.itemInfo} to="/#clientes" onClick={() => setSetor("clientes") }>
             Clientes
           </Link>
         </nav>

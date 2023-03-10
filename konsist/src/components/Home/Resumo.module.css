@@ -1,0 +1,152 @@
+.resumo {
+ display: grid;
+ /* justify-content: center; */
+ grid-template-columns: repeat(12, 1fr);
+ grid-column-gap: 40px;
+ max-width: 1400px;
+ padding: 0 80px 0 120px;
+ margin: auto;
+ background: #EDEDED;
+ height: 840px;
+ margin-bottom: 200px;
+}
+
+
+.texto {
+  margin-top: 40px;
+  grid-column: 1 / 7;
+}
+
+.subTitulo {
+  font-family: var(--type-second);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #595959;
+  margin-bottom: 20px;
+}
+
+.titulo {
+  font-family: var(--type-first);
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 72px;
+  color: #000000;
+  margin-bottom: 32px;
+}
+
+.titulo > span {
+  font-family: var(--type-first);
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 72px;
+  color: #3DB191;
+}
+
+.desc {
+  font-family: var(--type-second);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #595959;
+  max-width: 550px;
+  margin-bottom: 20px;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--type-second);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #41BD9A;
+  background-clip: text;
+  width: fit-content;
+  margin-bottom: 80px;
+}
+
+.link:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+
+.sub{
+  width: 326px;
+  height: 4px;
+  background: #41BD9A;
+  border-radius: 2px;
+}
+
+.dif {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -36px;
+}
+
+.tituloDif1 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 8px;
+  align-items: center;
+}
+
+.tituloDif2 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 8px;
+  align-items: center;
+}
+
+.tituloDif1 > h3 {
+  font-family: var(--type-first);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+  margin-left: 12px;
+}
+
+.tituloDif2 > h3 {
+  font-family: var(--type-first);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+  margin-left: 12px;
+  width: 267px;
+}
+
+.dif1 > p {
+  padding-left: 36px;
+  font-family: var(--type-second);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #595959;
+  width: 270px;
+}
+
+.dif2 > p {
+  padding-left: 36px;
+  font-family: var(--type-second);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #595959;
+  width: 280px;
+}
+
+.dif1 {
+  margin-right: 4px;
+}
+
+.imgResumo {
+  grid-column: 7 / 14;
+  margin-top: -80px;
+  width: 600px;
+  height: 1000px;
+}
+
+

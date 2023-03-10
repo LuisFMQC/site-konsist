@@ -1,12 +1,11 @@
 .produtos {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  /* grid-template-columns: repeat(12, 1fr); */
   margin-top: 0;
   padding: 0px 120px 0px 120px;
-  grid-column-gap: 40px;
   max-width: 1400px;
   align-items: start;
-  margin: auto;
+  margin: auto
 }
 
 .tituloProd {

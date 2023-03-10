@@ -1,0 +1,29 @@
+.divTitulo {
+  padding: 60px 120px;
+  max-width: 1400px;
+  background: #F7F7F7;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.subTitulo {
+  font-family: var(--type-second);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #707070;
+}
+
+.titulo {
+  font-family: var(--type-first);
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 72px;
+  color: #121212;
+}
+
+.titulo span {
+  color: #3DB191;
+}
+

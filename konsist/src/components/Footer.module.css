@@ -46,6 +46,7 @@
   line-height: 32px;
   font-weight: 500;
   color: #595959;
+  width: fit-content;
 }
 
 .itemContato {
@@ -100,4 +101,21 @@
   line-height: 32px;
   color: #9c9c9c;
   margin-bottom: 32px;
+}
+
+.itemInfo:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+.selected {
+    font-size: 18px;
+    line-height: 32px;
+    color: #595959;
+    width: fit-content;
+    font-weight: 600;
+    text-decoration: underline 2px;
+    text-underline-offset: 3px;
+    scale: 1.05;
 }

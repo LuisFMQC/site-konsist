@@ -1,0 +1,107 @@
+.produto {
+  display: flex;
+  flex-direction: row;
+  padding: 60px 120px; 
+  grid-column-gap: 40px;
+}
+
+.produto img,
+.produto video{
+  width: 560px;
+  height: 340px;
+}
+
+video, img {
+  border-radius: 5px;
+}
+
+.titulo {
+  display: flex;
+  align-items: center;
+}
+
+.titulo h1 {
+  font-family: var(--type-first);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  color: #121212;
+}
+
+.titulo span {
+  width: 12px;
+  height: 8px;
+  margin-right: 8px;
+  border-radius: 3px;
+  background: linear-gradient(180deg, #41BD9A 0%, #47B87A 100%);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info > p {
+  font-family: var(--type-second);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #595959;
+  margin-top: 20px;
+}
+
+.todosPontos {
+  display: flex;
+  flex-direction: row;
+}
+
+.link {
+  align-self: end;
+  justify-self: right;
+  margin-bottom: -5px;
+  margin-left: 78px;
+}
+
+.link button {
+  font-family: var(--type-second);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 16px 32px 16px 32px;
+  background: linear-gradient(180deg, #41BD9A 0%, #47B87A 100%);
+  border-radius: 5px;
+  border: none;
+  color: #F7F7F7;
+}
+
+.link button:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: 0.2s;
+}
+
+.pontos {
+  display: flex;
+  margin-top: 32px;
+  flex-direction: column;
+  width: 222px;
+}
+
+.ponto {
+  display: flex;
+  align-items: center;
+  font-family: var(--type-first);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #595959;
+  margin-bottom: 16px;
+}
+
+.ponto span {
+  width: 8px;
+  height: 12px;
+  margin-right: 8px;
+  background: linear-gradient(180deg, #41BD9A 0%, #47B87A 100%);
+  border-radius: 3px;
+}
